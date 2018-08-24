@@ -74,7 +74,7 @@ class NodeRendererDefault extends Component {
     }
 
     return (
-      <div style={{ height: '100%' }} {...otherProps}>
+      <div style={{ height: '100%', zIndex: 99999 - treeIndex }} {...otherProps}>
         {toggleChildrenVisibility &&
           node.children &&
           (node.children.length > 0 || typeof node.children === 'function') && (
